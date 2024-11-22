@@ -19,12 +19,13 @@ def generar_matriz(N):
             matriz[i][j] = numero
             numeros_usados.add(numero)
 
+def imprimir_matriz(matriz):
     for fila in matriz:
         print(fila)
 
 def main():
     N = int(input("Introduce el tamaño de la matriz (N): "))
-    generar_matriz(N)
-    return
+    matriz = generar_matriz(N)
+    imprimir_matriz(matriz)
 
 main()

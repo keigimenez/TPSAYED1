@@ -26,10 +26,11 @@ def palabras_filter(frase, N):
     return ' '.join(filter(lambda palabra: len(palabra) >= N, frase.split()))
 
 def main():
-    frase = input("Ingresa una frase: ")
-    N = int(input("Ingresa un valor entero N: "))
-    print("Con ciclos normales:", filtrar_palabras(frase, N))
-    print("Con comprensión de listas:", palabras_comprension(frase, N))
-    print("Con filter:", palabras_filter(frase, N))
+    while True:
+        frase = input("Ingresa una frase: ")
+        N = int(input("Ingresa un valor entero N: "))
+        print("Con ciclos normales:", filtrar_palabras(frase, N))
+        print("Con comprensión de listas:", palabras_comprension(frase, N))
+        print("Con filter:", palabras_filter(frase, N))
 
 main()

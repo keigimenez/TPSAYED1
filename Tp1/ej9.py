@@ -29,7 +29,7 @@ def cuenta_naranjas(cantidad_naranjas):
     
     for _ in range(cantidad_naranjas):
         peso = peso_naranja()
-        if 200 <= peso <= 300:
+        if 200 >= peso <= 300:
             peso_total += peso
             if peso_total >= 50000:
                 cajones_llenos += 1
@@ -37,7 +37,7 @@ def cuenta_naranjas(cantidad_naranjas):
         else:
             naranjas_para_jugo += 1
     
-    naranjas_sobrantes = cantidad_naranjas - (cajones_llenos * 250) - naranjas_para_jugo
+    naranjas_sobrantes = peso_total // 100
     return cajones_llenos, naranjas_para_jugo, naranjas_sobrantes
 
 def calcular_camiones_necesarios(cajones_llenos):

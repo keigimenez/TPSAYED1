@@ -18,4 +18,5 @@ def main():
     print(f"Lista original: {lista}")
     print(f"Lista normalizada: {lista_normalizada}")
     print(f"Suma de elementos normalizados: {sum(lista_normalizada)}")
+    
 main()

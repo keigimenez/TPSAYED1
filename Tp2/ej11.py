@@ -49,18 +49,20 @@ def menu():
     pacientes_urgencia = []
     pacientes_turno = []
     while True:
+        print("\nMenú:")
         print("1. Registrar paciente")
         print("2. Mostrar listados")
         print("3. Buscar afiliado")
         print("4. Salir")
-        opcion = int(input("Seleccione una opción: "))
-        if opcion == 1:
+        op = int(input("Seleccione una opción: "))
+        if op == 1:
             registro_paciente(pacientes_urgencia, pacientes_turno)
-        elif opcion == 2:
+        elif op == 2:
             listados(pacientes_urgencia, pacientes_turno)
-        elif opcion == 3:
+        elif op == 3:
             buscar_afiliado(pacientes_urgencia, pacientes_turno)
-        elif opcion == 4:
+        elif op == 4:
+            print("Saliendo...")
             break
         else:
             print("Opción no válida.")

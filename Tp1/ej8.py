@@ -68,12 +68,12 @@ def main():
         try:
             mes = int(input("\nIngrese un número de mes (1-12) o 0 para salir: "))
             if mes == 0:
-                print("Saliendo del programa.")
+                print("Saliendo...")
                 break
             if mes < 1 or mes > 12:
                 print("Por favor, ingrese un número de mes válido entre 1 y 12.")
                 continue
-            anio = int(input("Ingrese un año: "))
+            anio = int(input("Ingrese un anio: "))
             imprimir_calendario(mes, anio)
         except ValueError:
             print("Por favor, ingrese un número válido.")

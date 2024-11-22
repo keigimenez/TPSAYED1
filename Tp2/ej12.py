@@ -52,9 +52,9 @@ def menu():
             eliminados = eliminar_socio(ingresos, socio_baja)
             print(f"\nTotal de ingresos eliminados: {eliminados}")
         elif opcion == "4":
-            print("Saliendo del programa.")
+            print("Saliendo...")
             break
         else:
-            print("Opción no válida. Intente nuevamente.")
+            print("Opción no válida.")
 
 menu()
